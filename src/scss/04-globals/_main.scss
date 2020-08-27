@@ -5,7 +5,7 @@ main{
     align-items: center;
     flex-direction: column;
 }
-@media (min-width: 800px){
+@media (min-width: 800px)and(min-height:500px){
     main{
         display: grid;
         grid-template-columns: 4fr 5fr;
@@ -19,12 +19,12 @@ main{
         }
     }
 }
-@media (min-width: 1000px){
+@media (min-width: 1000px)and(min-height:500px){
     main{
         grid-template-columns: 3fr 5fr;
     }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px)and(min-height:500px){
     main{
         grid-template-columns: 1fr 2fr;
     }

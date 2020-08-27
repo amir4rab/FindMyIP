@@ -27,23 +27,25 @@
         min-height: 30vh;
     }
 }
-@media (min-width: 800px){
+@media (min-width: 800px) and (min-height: 500px){
     #slide{
-        overflow-y: scroll;
-        height: 100vh;
-        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
         width: 100%;
         #ipAddressSecondaryMinStatus{
             display: none;
+            max-height: 35vh;
         }
         #ipAddressSecondaryFullStatus{
             padding: 2rem 0 8rem  0;
-            height: 55vh;
+            min-height: 0vh;
+            max-height: 55vh;
             .strong{
                 display: none;
             }
         }
         #about{
+            max-height: 30vh;
             padding: 2rem 0 3rem  0;
         }
     }
