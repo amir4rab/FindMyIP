@@ -1,0 +1,21 @@
+.status-list{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 0;
+    p{
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 700;
+        }
+    }
+    .strong{
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+}

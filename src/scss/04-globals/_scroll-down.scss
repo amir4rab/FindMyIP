@@ -1,0 +1,29 @@
+#scrollDown{
+    margin: 0 auto;
+    width: 1rem;
+    height: 3rem;
+    position: relative;
+    &::after{
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        background: $blue-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        border-radius: 50%;
+        opacity: .3;
+        @keyframes scroll {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 2rem;
+                left: 0;    
+            }
+        }
+        animation: scroll 0.9s alternate infinite ease-in-out;
+    }
+}
