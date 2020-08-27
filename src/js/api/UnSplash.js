@@ -4,7 +4,6 @@ export class UnSplash{
     // }
     async initData(data){
         let img;
-        document.getElementById("ipAddressStatus").innerText = `https://source.unsplash.com/${window.innerHeight/2}x${window.innerWidth}/?city,${data}`;
         if(window.innerWidth < 800){
             img = await fetch(`https://source.unsplash.com/${window.innerHeight<720?720:window.innerHeight}x${window.innerWidth<720?720:window.innerWidth}/?city,${data}`);
         }else{
