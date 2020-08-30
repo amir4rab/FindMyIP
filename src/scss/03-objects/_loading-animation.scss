@@ -1,0 +1,28 @@
+.loading-animation{
+    display: flex;
+    justify-content: center;
+    .ball{
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        background: $blue-light;
+        margin: .5rem;
+    }
+    @keyframes bouns {
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(1.25rem);
+        }
+    }
+    .ball:nth-child(1){
+        animation: bouns .75s 0s infinite ease-in-out alternate;
+    }
+    .ball:nth-child(2){
+        animation: bouns .75s .5s infinite ease-in-out alternate;
+    }
+    .ball:nth-child(3){
+        animation: bouns .75s 1s infinite ease-in-out alternate;
+    }
+}

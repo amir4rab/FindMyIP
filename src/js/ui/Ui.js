@@ -25,6 +25,8 @@ export class Ui{
             ipAddressSecondaryFullStatus.appendChild(elment);
         });
         ipAddressSecondaryFullStatus.firstChild.classList.add("strong");
+
+        document.getElementsByClassName("modal")[0].style = "display:none";
     }
     renderImg(imgId,data){
         document.querySelector(imgId).src = data;
