@@ -26,9 +26,13 @@ export class Ui{
         });
         ipAddressSecondaryFullStatus.firstChild.classList.add("strong");
 
-        document.getElementsByClassName("modal")[0].style = "display:none";
+        document.getElementById("pageLoadingModal").style = "display:none";
     }
     renderImg(imgId,data){
         document.querySelector(imgId).src = data;
+        
+        document.querySelector(imgId).onload = ()=>{
+            document.getElementById("imgLoadingModal").style = "display:none";
+        }
     }
 }
